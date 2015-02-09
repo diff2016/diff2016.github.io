@@ -1,0 +1,47 @@
+---
+layout: beetle-default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+<section class="row section">
+	<div class="row-content buffer even clear-after">					
+		<div class="section-title"><h3>Latest News</h3></div>
+		<div class="grid-items blog-section masonry-style preload">
+			{% for post in site.posts %}
+			<article class="item column three">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
+					<div class="blog-excerpt">
+						<div class="blog-excerpt-inner">
+							<h5 class="meta-post">{{ post.date | date: "%b %-d, %Y" }}</h5>
+							<h2>{{ post.title }}</h2>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div><!-- blog-excerpt-inner -->		
+					</div><!-- blog-excerpt -->								
+				</a>
+			</article>
+			{% endfor %}									
+			<div class="shuffle-sizer three"></div>
+		</div><!-- grid-items -->
+		<div class="more-btn"><a class="button transparent aqua" href="#">Read all News</a></div>						
+	</div>	
+</section>
