@@ -4,6 +4,7 @@ layout: default
 <div class="row-content buffer-left buffer-right buffer-bottom">
 		<div class="post-area clear-after">
 			<article role="main">
+				
 				<h1>{{ page.title }}</h1>
 				{{ content }}
 			</article>
