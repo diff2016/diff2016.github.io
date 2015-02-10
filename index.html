@@ -1,26 +1,42 @@
 ---
-layout: home
+layout: default
 ---
-<section class="row section">
-	<div class="row-content buffer even clear-after">					
-		<div class="section-title"><h3>Latest News</h3></div>
-		<div class="grid-items blog-section masonry-style preload">
-			{% for post in site.posts %}
-			<article class="item column three">
-				<a href="{{ post.url | prepend: site.baseurl }}">
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-					<div class="blog-excerpt">
-						<div class="blog-excerpt-inner">
-							<h5 class="meta-post">{{ post.date | date: "%b %-d, %Y" }}</h5>
-							<h2>{{ post.title }}</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- blog-excerpt-inner -->		
-					</div><!-- blog-excerpt -->								
-				</a>
-			</article>
-			{% endfor %}									
-			<div class="shuffle-sizer three"></div>
-		</div><!-- grid-items -->
-		<div class="more-btn"><a class="button transparent aqua" href="#">Read all News</a></div>						
-	</div>	
-</section>
+<div id="intro-wrap">
+	<div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">
+		{% for post in site.posts %}			
+		<div class="intro-item" style="background-image: url({{ post.image }});">
+			<div class="caption">
+			</div><!-- caption -->
+			<div class="photocaption">
+				<h4>{{ post.image-caption }}</h4>
+			</div><!-- photocaption -->						
+		</div>
+		{% endfor %}																
+	</div><!-- intro -->
+</div><!-- intro-wrap -->
+
+<div id="main">
+	<section class="row section">
+		<div class="row-content buffer even clear-after">					
+			<div class="section-title"><h3>Latest News</h3></div>
+			<div class="grid-items blog-section masonry-style preload">
+				{% for post in site.posts %}
+				<article class="item column three">
+					<a href="{{ post.url | prepend: site.baseurl }}">
+						<figure><img src="{{ post.image }}" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
+						<div class="blog-excerpt">
+							<div class="blog-excerpt-inner">
+								<h5 class="meta-post">{{ post.date | date: "%b %-d, %Y" }}</h5>
+								<h2>{{ post.title }}</h2>
+								<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div><!-- blog-excerpt-inner -->		
+						</div><!-- blog-excerpt -->								
+					</a>
+				</article>
+				{% endfor %}									
+				<div class="shuffle-sizer three"></div>
+			</div><!-- grid-items -->
+			<div class="more-btn"><a class="button transparent aqua" href="#">Read all News</a></div>						
+		</div>	
+	</section>
+</div><!-- id-main -->
