@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First post !"
+title:  "Découverte de synthesia"
 date:   2015-02-10 00:08:00
 categories: synthesia
 image: /img/piano.jpg
