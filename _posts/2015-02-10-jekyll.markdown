@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Découverte de Jekyll !"
+date:   2015-02-08 21:25:37
+categories: jekyll
+image: /img/jekyll.png
+image-caption: <a href="http://jekyllrb.com">jekyllrb.com</a>
+---
+
+Découverte de Jekyll.
+
+[jekyll]:      http://jekyllrb.com

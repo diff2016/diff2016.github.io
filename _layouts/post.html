@@ -1,12 +1,27 @@
 ---
 layout: default
 ---
-<div class="row-content buffer-left buffer-right buffer-bottom">
-	<div class="post-area clear-after">
-		<article role="main">
-			<h5 class="meta-post"><time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%c" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
-			<h1>{{ page.title }}</h1>
-			{{ content }}
-		</article>
-	</div><!-- post-area -->
-</div><!-- row-content -->
+
+<div id="intro-wrap">
+	<div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">					
+		<div class="intro-item" style="background-image: url({{ page.image }});">
+			<div class="caption">
+			</div><!-- caption -->
+			<div class="photocaption">
+				<h4>{{ page.image-caption }}</h4>
+			</div><!-- photocaption -->						
+		</div>																	
+	</div><!-- intro -->
+</div><!-- intro-wrap -->
+
+<div id="main">
+	<div class="row-content buffer-left buffer-right buffer-bottom">
+		<div class="post-area clear-after">
+			<article role="main">
+				<h5 class="meta-post"><time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%c" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
+				<h1>{{ page.title }}</h1>
+				{{ content }}
+			</article>
+		</div><!-- post-area -->
+	</div><!-- row-content -->
+</div><!-- id-main -->
