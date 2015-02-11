@@ -10,19 +10,45 @@ image-caption: By ericfleming8 from pixabay.com
 
 Exemples d'utilisation de $\LaTeX{}$ sur le web.
 
+---
+
 Pour mettre du code $\LaTeX{}$ inline, il faut écrire :
 
 	Lorsque $x \lt y$ alors ...
 
 Lorsque $x \lt y$ alors ...
 
+---
+
+Test d'un array :
+
+	\\begin{array}{cc}
+	  a & b \\\\
+	  c & c
+	\\end{array}
 
 \\begin{array}{cc}
   a & b \\\\
   c & c
 \\end{array}
 
+---
+
+Test d'une formule :
+
+	$E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}$
+
 $E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}$
+
+---
+
+Test d'un texte :
+
+	$\LaTeX{}$ is a document preparation system for the $\TeX{}$ typesetting program. It offers programmable desktop publishing features and extensive facilities for automating most aspects of typesetting and desktop publishing, including numbering and cross-referencing, tables and figures, page layout, bibliographies, and much more. $\LaTeX{}$ was originally written in 1984 by Leslie Lamport and has become the dominant method forusing $\TeX$; few people write in plain $\TeX{}$ anymore.
+	\\begin{align}
+	E_0 &= mc^2
+	E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
+	\\end{align}
 
 $\LaTeX{}$ is a document preparation system for the $\TeX{}$ typesetting program. It offers programmable desktop publishing features and extensive facilities for automating most aspects of typesetting and desktop publishing, including numbering and cross-referencing, tables and figures, page layout, bibliographies, and much more. $\LaTeX{}$ was originally written in 1984 by Leslie Lamport and has become the dominant method forusing $\TeX$; few people write in plain $\TeX{}$ anymore.
 \\begin{align}
@@ -30,7 +56,18 @@ E_0 &= mc^2
 E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
 \\end{align}
 
+---
+
+Test d'une commande inexistante :
+
+	$$\CommandeQuiNexistePas$$
+
 $$\CommandeQuiNexistePas$$
 
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+---
+
+Autre test :
+
+	When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
