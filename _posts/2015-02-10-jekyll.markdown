@@ -3,8 +3,8 @@ layout: post
 title:  "1er post de math !"
 date:   2015-02-11 21:27:37
 categories: math latex
-image: /img/jekyll.png
-image-caption: <a href="http://jekyllrb.com">jekyllrb.com</a>
+image: /img/blackboard.png
+image-caption: By valium88 from freeimages.com
 ---
 
 1er post de math !
