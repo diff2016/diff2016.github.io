@@ -17,5 +17,18 @@
 	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">	
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />	
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	    extensions: ["tex2jax.js"],
+	    jax: ["input/TeX", "output/HTML-CSS"],
+	    tex2jax: {
+	      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+	      processEscapes: true
+	    },
+	    "HTML-CSS": { availableFonts: ["TeX"] }
+	  });
+	</script>	
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 </head>
