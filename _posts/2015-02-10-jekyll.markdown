@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  "Découverte de Jekyll !"
-date:   2015-02-08 21:25:37
-categories: jekyll
+title:  "1er post de math !"
+date:   2015-02-11 21:27:37
+categories: math latex
 image: /img/jekyll.png
 image-caption: <a href="http://jekyllrb.com">jekyllrb.com</a>
 ---
 
-Découverte de Jekyll.
+1er post de math !
 
-[jekyll]:      http://jekyllrb.com
+... when $x \lt y$ we have ...
+
+\\begin{array}{cc}
+  a & b \\\\
+  c & c
+\\end{array}
