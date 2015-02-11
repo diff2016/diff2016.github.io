@@ -8,7 +8,11 @@ image: /img/blackboard2.jpg
 image-caption: By ericfleming8 from pixabay.com
 ---
 
-1er post de math !
+Exemples d'utilisation de $\LaTeX{}$ sur le web.
+
+Pour mettre du code $\LaTeX{}$ inline, il faut écrire :
+
+	Lorsque $x \lt y$ alors ...
 
 Lorsque $x \lt y$ alors ...
 
