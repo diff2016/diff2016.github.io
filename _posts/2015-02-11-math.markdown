@@ -3,8 +3,8 @@ layout: post
 title:  "1er post de math !"
 date:   2015-02-11 21:27:37
 categories: math latex
-image: /img/blackboard.jpg
-image-caption: By valium88 from freeimages.com
+image: /img/blackboard2.jpg
+image-caption: By ericfleming8 from pixabay.com
 ---
 
 1er post de math !
