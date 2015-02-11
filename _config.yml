@@ -1,6 +1,6 @@
 # Site settings
-title: Blog de Charles Martin
-email: martinaware@gmail.com
+title: Blog de Serap Gürer
+email: serapgurer@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Meilleur blog technique du monde
 baseurl: "" # the subpath of your site, e.g. /blog/
