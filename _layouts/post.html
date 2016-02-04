@@ -4,7 +4,7 @@ layout: default
 
 <div id="intro-wrap">
 	<div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">					
-		<div class="intro-item" style="background-image: url({{ page.image }});">
+		<div class="intro-item" style="background-image: url({{ page.image | prepend: site.baseurl }});">
 			<div class="caption">
 				<h2>{{ page.title }}</h2>
 				<p>{{ page.description }}</p>
